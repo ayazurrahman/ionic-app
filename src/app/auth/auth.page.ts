@@ -18,4 +18,7 @@ export class AuthPage implements OnInit {
     this.authService.login();
     this.router.navigateByUrl('/places/tabs/discover')
   }
+  onSubmit(form){
+    console.log(form)
+  }
 }
