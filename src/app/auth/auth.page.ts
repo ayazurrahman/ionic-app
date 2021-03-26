@@ -8,7 +8,7 @@ import { AuthService } from './auth.service';
   styleUrls: ['./auth.page.scss'],
 })
 export class AuthPage implements OnInit {
-
+  isLogin = true
   constructor(private authService:AuthService, private router:Router) { }
 
   ngOnInit() {
@@ -20,5 +20,8 @@ export class AuthPage implements OnInit {
   }
   onSubmit(form){
     console.log(form)
+  }
+  onSwitchAuthMode(){
+    this.isLogin = !this.isLogin;
   }
 }
