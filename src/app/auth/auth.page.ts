@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from './auth.service';
 
@@ -13,6 +13,7 @@ export class AuthPage implements OnInit {
 
   ngOnInit() {
   }
+
 
   onLogin(){
     this.authService.login();
